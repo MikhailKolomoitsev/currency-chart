@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from "prop-types";
-import Styles from './Styles.module.css'
+import Styles from './styles.module.css'
 
 const CurrencyCard = ({ value, currency}) => {
   return (

@@ -13,10 +13,11 @@ const Header = () => {
     let usdValue
     let eurValue
     useEffect(() => {
+        setTimeout(() => {
             fetchData().then(data => setusd(data.USD))
             fetchData().then(data => seteur(data.EUR))
             setvisible(false)
-
+        }, 800);
     }, [])
     usdValue = (''+(1 / usd)).slice(0,5)
     eurValue = (''+(1 / eur)).slice(0,5)
